@@ -23,3 +23,5 @@
  */
 
 $string['pluginname'] = 'Custom MoodleMobile app';
+$string['plugingradesname'] = 'Grades";
+$string['nogrades'] = 'No grades information for this activity';
