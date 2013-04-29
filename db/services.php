@@ -42,5 +42,35 @@ $functions = array(
         'description' => 'Update one or more grade item and student grades.',
         'type'        => 'write',
         'capabilities'=> '',
+    ),
+
+    'local_custommm_get_forums_by_courses' => array(
+        'classname' => 'local_custommm_external',
+        'methodname' => 'get_forums_by_courses',
+        'classpath' => 'local/custommm/externallib.php',
+        'description' => 'Returns a list of forum instances in a provided set of courses, if
+            no courses are provided then all the forum instances the user has access to will be
+            returned.',
+        'type' => 'read',
+        'capabilities' => 'mod/forum:viewdiscussion'
+    ),
+
+    'local_custommm_get_forum_discussions' => array(
+        'classname' => 'local_custommm_external',
+        'methodname' => 'get_forum_discussions',
+        'classpath' => 'local/custommm/externallib.php',
+        'description' => 'Returns a list of forum discussions contained within a given set of forums.',
+        'type' => 'read',
+        'capabilities' => 'mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting'
+    ),
+
+    'local_custommm_get_forum_posts' => array(
+        'classname' => 'local_custommm_external',
+        'methodname' => 'get_forum_posts',
+        'classpath' => 'local/custommm/externallib.php',
+        'description' => 'Returns a list of forum posts for a discussion.',
+        'type' => 'read',
+        'capabilities' => 'mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting'
     )
+    
 );
